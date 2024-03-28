@@ -20,6 +20,6 @@ This will also symlink `ext-library` into node_modules
 ### Route of issue
 
 The route of issue is cleaning command `rm -rf ext-library/dist`
-It has same behavior when using `tsc --build --clean` when working with projects
+It has same behavior when using `tsc --build --clean` when working with Typescript projects
 
-TS Server somehow looses connection to the linked library, though it is the same folder `ext-library` still linked in `node_modules`
+TS Server somehow loses connection to the linked library, though it is the same folder `ext-library` still linked in `node_modules`
