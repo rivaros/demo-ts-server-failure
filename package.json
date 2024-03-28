@@ -1,0 +1,16 @@
+{
+  "name": "demo-ts-server-failure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:library": "npm i --prefix ext-library && rm -rf ext-library/dist && tsc --project ext-library/tsconfig.json",
+    "prepare": "npm run build:library && npx link --yes ./ext-library"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.3"
+  }
+}
